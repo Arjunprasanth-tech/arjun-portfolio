@@ -214,7 +214,12 @@ header:hover {
 .tech-card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 20px; }
 .tech-card h3 { font-size: 1.2rem; color: var(--text-white); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
 .tech-card p { font-size: 0.9rem; color: var(--text-gray); }
-
+/* Add this to style.css to remove link underlines */
+.tech-card {
+    text-decoration: none; /* Removes underline */
+    display: block;        /* Ensures it keeps the box shape */
+    color: inherit;        /* Keeps your text color white/gray */
+}
 /* CONTACT */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
 .contact-card {
